@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Tangerine);
+@import url(https://fonts.googleapis.com/css?family=Muli);
 @media (max-width: 762px){
     .btn-responsive {
         font-size:80%;
@@ -18,18 +18,13 @@
   }
 }
 
-#aboutProject{
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-
-}
-
 body {
-    margin-bottom: 60px;
-    margin-top: 80px;
-    background-image: url("/image/bg.png");
+  color: #66615b;
+  font-size: 14px;
+  font-family: 'Muli', Arial, sans-serif;
+  background-color: #f4f3ef;
+  margin-bottom: 60px;
+  margin-top: 120px;
 }
 
 .btn-default {
@@ -65,7 +60,7 @@ body {
     border-bottom-width: 2px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 3px;
+    border-radius: 6px;
     -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
     -moz-box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
     /*box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);*/
@@ -84,7 +79,6 @@ body {
     background-color: antiquewhite;
     box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
 }
-
 
 .card-title [class*="icon-"] {
  -webkit-transition-duration: 0.8s;
@@ -106,12 +100,41 @@ body {
     .rotate(90deg);
 }
 }
-.chartLoading{
-    display:none;
+
+.chart-wrapper{
+    background-color: #fff;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 1px 3px rgba(0,0,0,.16);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 1px 3px rgba(0,0,0,.16);
 }
 
-#chart{
-    position:relative;
+.chart-wrapper .chart-title{
+    text-transform: capitalize;
+    border-bottom: 3px solid #d9d9d9;
+  font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 10px 10px; 
+}
+
+.chart-wrapper .chart-area{
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.chart-wrapper .chart-footer{
+  padding: 0px 30px 5px 30px;
+  line-height: 30px;
+}
+
+hr {
+   border-color: #d2bc9d;    
+}
+
+.chart-wrapper .chart-footer hr {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .col-md-3{
@@ -119,65 +142,35 @@ body {
     padding-right: 0px; 
 }
 
-div#sequence{
-   padding-top: 10px;
-   padding-left: 5px;
-   /*overflow: scroll;*/
-   overflow-y: hidden;
+.navbar {
+  min-height: 75px;
+  border-bottom: 0px solid #d9d9d9;
+  box-shadow: 0 3px 10px rgba(0,0,0,.13),0 3px 10px rgba(0,0,0,.16);
 }
 
-div.tooltip {
-    position: absolute;
-    text-align: center;
-    font: 12px sans-serif;
-    border: 5px;	
-    border-color: aliceblue;
-    border-radius: 8px;
-    padding: 8px;
-    color: cornsilk;
-    background:black;
-    pointer-events: none;
+.navbar .navbar-brand{
+  color: #777;
+  color:#fff;
+  position: absolute;
+  left: 40px;
+  margin:10px 15px;
+  font-weight: 600;
+  padding: 25px 15px;
+  font-size: 30px;
 }
 
-.dropdown.dropdown-toggle{
-    align: left;
+.navbar .navbar-nav > li > a {
+  color: #777;
+  color: #fff;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.42857;
+  margin: 15px 10px;
+  padding: 15px 25px;
 }
 
-.footer {
-    position: absolute;
-    padding-top: 10px;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: gainsboro;
-}
-
-h4.title {
-    text-align: center;
-}
-
-html {
-    position: relative;
-    min-height: 100%;
-}
-
-.header{
-    text-align: center;
-    color: rosybrown;
-    font-size : 20px;
-    font-family:fantasy;
-}
-
-#loadTestFile {
-	width: 250px;
-	height: 50px;
-	background-color: black;
-	color: gainsboro;
-	border: none;
-	font-size: 18px;
-    font-family:sans-serif;
-	font-weight: bold;
-	margin: 300px 0 0 450px;
+.navbar .navbar-nav > li > a:hover{
+  color: #68B3C8;
 }
 
 .row {
@@ -185,41 +178,10 @@ html {
   margin-left: 5px;
 }
 
-#showViz {
-	/*visibility: hidden;*/
-}            
-
 text {
     cursor: default;
     fill: #FFF;
     pointer-events: none;
-    font-size: 13px;
-    font-family: sans-serif;
+    font-size: 12px;
     font-weight: bold;
-}
-
-.node {
-  cursor: pointer;
-}
-
-.node circle {
-  fill: #fff;
-  stroke: steelblue;
-  stroke-width: 1.5px;
-}
-
-.node text{
-    font: 15px ;
-    fill: black;
-}
-
-.link {
-  fill: none;
-  stroke: #ccc;
-  stroke-width: 1.5px;
-}
-
-#the-basics {
-  max-height: 150px;
-  overflow-y: auto;
 }
