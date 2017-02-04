@@ -51,16 +51,11 @@ body {
 
 .card {
     text-align: center;
-    margin-top: 10px;
-    padding-top: 5px;
-    padding-right: 2px;
-    padding-left: 2px;
     background-color: #FFF;
     border-top-width: 0;
     border-bottom-width: 2px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
-    border-radius: 6px;
     -webkit-box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
     -moz-box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
     /*box-shadow: 0 1px 6px rgba(0,0,0,.12),0 1px 6px rgba(0,0,0,.12);*/
@@ -72,55 +67,38 @@ body {
 
 .card-title {
     padding-top: 2px;
-    padding-bottom: 2px;
+    padding-bottom: 5px;
+  margin-bottom: 5px;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: bold;
-    background-color: antiquewhite;
-    box-shadow: 0 3px 10px rgba(0,0,0,.23),0 3px 10px rgba(0,0,0,.16);
+    background-color:darkgrey;
+    box-shadow: 0 1px 3px rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.26);
 }
 
-.card-title [class*="icon-"] {
- -webkit-transition-duration: 0.8s;
-    -moz-transition-duration: 0.8s;
-    -o-transition-duration: 0.8s;
-    transition-duration: 0.8s;
-     
-    -webkit-transition-property: -webkit-transform;
-    -moz-transition-property: -moz-transform;
-    -o-transition-property: -o-transform;
-    transition-property: transform;
-}
-.card-title:hover [class*="icon-"] {
-    :hover [class*="icon-"] {
-	color: #24a159 !important;
-    -webkit-transform:rotate(360deg);
-    -moz-transform:rotate(360deg);
-    -o-transform:rotate(360deg);
-    .rotate(90deg);
-}
-}
-
+/* chart layout for creating blocks*/
 .chart-wrapper{
-    background-color: #fff;
-    margin-bottom: 10px;
-    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 1px 3px rgba(0,0,0,.16);
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 1px 3px rgba(0,0,0,.16);
+  background-color: #fff;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 1px 3px rgba(0,0,0,.16);
+  -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 1px 3px rgba(0,0,0,.16);
+  -moz-box-shadow: 0 1px 3px rgba(0,0,0,.25), 0 1px 3px rgba(0,0,0,.16);
 }
 
 .chart-wrapper .chart-title{
-    text-transform: capitalize;
-    border-bottom: 3px solid #d9d9d9;
+  text-transform: capitalize;
+  border-bottom: 3px solid #d9d9d9;
   font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px 10px 10px; 
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 10px 10px; 
 }
 
 .chart-wrapper .chart-area{
-    text-align: center;
-    overflow: hidden;
-    position: relative;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .chart-wrapper .chart-footer{
@@ -145,6 +123,7 @@ hr {
 .navbar {
   min-height: 75px;
   border-bottom: 0px solid #d9d9d9;
+  /*background-color: #f4f3ef;*/
   box-shadow: 0 3px 10px rgba(0,0,0,.13),0 3px 10px rgba(0,0,0,.16);
 }
 
@@ -156,7 +135,7 @@ hr {
   margin:10px 15px;
   font-weight: 600;
   padding: 25px 15px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .navbar .navbar-nav > li > a {
