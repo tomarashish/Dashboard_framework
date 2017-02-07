@@ -7,14 +7,13 @@
    <script src="js/underscore-min.js"></script>
    <script src="js/jquery-ui.min.js"></script>
   <script src="js/gridstack.min.js"></script>
-  <script src="js/dashboard.js"></script>
 
   <!-- usingbootstrap, fontawesome and custome css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/gridstack.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+  <!--link rel="stylesheet" type="text/css" href="css/dashboard.css"-->
 
 </head>
 
@@ -52,28 +51,51 @@
 
   <!-- gridstack panels -->
   <div class="grid-stack">
-    
-    <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="0" data-gs-y="0">
-      <div class="widget-box">
-        <div class="widget-title"> Sunburst</div>
-        <div class="widget-content"> Demo area for sunburst</div>
+  <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x=
+  "0" data-gs-y="0">
+    <div class="panel panel-info grid-stack-item-content">
+      <div class="panel-heading">
+        <h3 class="panel-title" data-toggle="tooltip" data-placement="bottom" title="Click to drag panel"><i class="fa fa-pie-chart"></i> Sunbusrt</h3>
+      </div>
+
+
+      <div class="panel-body">
+        <p style="text-align:center;">Sunburst Chart Area</p>
       </div>
     </div>
-    
-     <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="4" data-gs-y="0">
-       <div class="widget-box">
-         <div class="widget-title"> Heatmap</div>
-         <div class="widget-content"> Demo area for heatmap</div>
-       </div>
+  </div>
+
+
+  <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x=
+  "4" data-gs-y="0">
+    <div class="panel panel-warning grid-stack-item-content">
+      <div class="panel-heading">
+        <h3 class="panel-title" data-toggle="tooltip" data-placement="bottom" title="Click to drag panel"><i class="fa fa-area-chart"></i> Demo Heatmap</h3>
+      </div>
+
+
+      <div class="panel-body">
+      <p style="text-align:center;">Heatmap data </p>
+      </div>
     </div>
-    
-     <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="8" data-gs-y="0">
-      <div class="widget-box">
-        <div class="widget-title"> Stack bar Chart</div>
-        <div class="widget-content"> Demo are for stack bar</div>
-       </div>
+  </div>
+
+
+<div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x=
+  "8" data-gs-y="0">
+    <div class="panel panel-danger grid-stack-item-content">
+      <div class="panel-heading">
+      
+        <h3 class="panel-title" data-toggle="tooltip" data-placement="bottom" title="Click to drag panel"><i class="fa fa-bar-chart"></i> Chart Area</h3>
+      </div>
+
+
+      <div class="panel-body">
+        <p style="text-align:center;">Chart data </p>
+      </div>
     </div>
-  
-  </div> <!--end of gridstack>
+  </div>
+    <script src="js/dashboard.js"></script>
+</div> <!--end of gridstack>
 
 </body>
