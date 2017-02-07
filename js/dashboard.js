@@ -3,7 +3,3 @@ var options = {
     vertical_margin: 10
 };
 $('.grid-stack').gridstack(options);
-
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(); 
-});
