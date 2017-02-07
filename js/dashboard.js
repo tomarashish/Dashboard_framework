@@ -1,8 +1,9 @@
-$(function(){ //DOM Ready
+var options = {
+    cell_height: 80,
+    vertical_margin: 10
+};
+$('.grid-stack').gridstack(options);
 
-    $(".gridster ul").gridster({
-        widget_margins: [10, 10],
-        widget_base_dimensions: [140, 140]
-    });
-
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
 });

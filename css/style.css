@@ -231,8 +231,8 @@ hr {
 .navbar .navbar-nav>.active>a:hover 
 {
   background-color: #66615b !important;
-  color:#fff !important;*/
-  border-radius: 20px !important;
+  color:#fff !important;
+  border-radius: 6px !important;
 }
 
 .row {

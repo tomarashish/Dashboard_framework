@@ -3,13 +3,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 
   <!-- Using local jquery_gridster, bootstrap and fontawesome libs-->
-   <script src="js/jquery.js"></script>
-  <script src="js/jquery.gridster.min.js"></script>
+  <script src="js/jquery.js"></script>
+   <script src="js/underscore-min.js"></script>
+   <script src="js/jquery-ui.min.js"></script>
+  <script src="js/gridstack.min.js"></script>
   <script src="js/dashboard.js"></script>
 
   <!-- usingbootstrap, fontawesome and custome css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/jquery.gridster.min.css">
+  <link rel="stylesheet" type="text/css" href="css/gridstack.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" type="text/css" href="css/dashboard.css">
@@ -40,6 +42,7 @@
     </div>
   </nav>
 
+  
   <!--footer class="footer">
         <div class="container">
             <p>Under development</p>
@@ -47,23 +50,30 @@
         </div>
     </footer-->
 
-  <!-- https://themify.me/themify-icons-->
-  <div class="gridster">
-    <ul>
-      <li class="widget-box" data-row="1" data-col="2" data-sizex="5" data-sizey="3">
-       <div class="widget-title">Demo1</div></li>
-      <li class="widget-box" data-row="2" data-col="2" data-sizex="5" data-sizey="3">
-       <div class="widget-title">Demo2</div></li>
-
-      
-      <li class="widget-box" data-row="1" data-col="2" data-sizex="5" data-sizey="3">
-       <div class="widget-title">Demo3</div>
-      </li>
-      <li class="widget-box" data-row="2" data-col="2" data-sizex="5" data-sizey="3">
-       <div class="widget-title">Demo4</div>
-      </li>
-      
-    </ul>
-  </div>
+  <!-- gridstack panels -->
+  <div class="grid-stack">
+    
+    <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="0" data-gs-y="0">
+      <div class="widget-box">
+        <div class="widget-title"> Sunburst</div>
+        <div class="widget-content"> Demo area for sunburst</div>
+      </div>
+    </div>
+    
+     <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="4" data-gs-y="0">
+       <div class="widget-box">
+         <div class="widget-title"> Heatmap</div>
+         <div class="widget-content"> Demo area for heatmap</div>
+       </div>
+    </div>
+    
+     <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="8" data-gs-y="0">
+      <div class="widget-box">
+        <div class="widget-title"> Stack bar Chart</div>
+        <div class="widget-content"> Demo are for stack bar</div>
+       </div>
+    </div>
+  
+  </div> <!--end of gridstack>
 
 </body>
