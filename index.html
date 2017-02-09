@@ -4,16 +4,16 @@
 
   <!-- Using local jquery_gridster, bootstrap and fontawesome libs-->
   <script src="js/jquery.js"></script>
-   <script src="js/underscore-min.js"></script>
-   <script src="js/jquery-ui.min.js"></script>
-  <script src="js/gridstack.min.js"></script>
-
+  <script src="js/underscore-min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  
+<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.min.js'></script>
   <!-- usingbootstrap, fontawesome and custome css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/gridstack.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!--link rel="stylesheet" type="text/css" href="css/dashboard.css"-->
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 
 </head>
 
@@ -41,60 +41,58 @@
     </div>
   </nav>
 
-  
+
   <!--footer class="footer">
         <div class="container">
             <p>Under development</p>
-            <a href="https://github.com/biographika/phylogenomics-viz" target="_blank"><i class="icon-github icon-large"></i>&nbsp;&nbsp;Github</a>
+            <a href="" target="_blank"><i class="icon-github icon-large"></i>&nbsp;&nbsp;Github</a>
         </div>
     </footer-->
 
   <!-- gridstack panels -->
   <div class="grid-stack">
-  <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x=
-  "0" data-gs-y="0">
-    <div class="panel panel-info grid-stack-item-content">
-      <div class="panel-heading">
-        <h3 class="panel-title" data-toggle="tooltip" data-placement="bottom" title="Click to drag panel"><i class="fa fa-pie-chart"></i> Sunbusrt</h3>
-      </div>
+    <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="0" data-gs-y="0">
+      <div class="grid-stack-item-content panel panel-info ">
+        <div class="panel-heading">
+          <h3 class="panel-title"><i class="fa fa-pie-chart"></i> Sunbusrt</h3>
+        </div>
 
 
-      <div class="panel-body">
-        <p style="text-align:center;">Sunburst Chart Area</p>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x=
-  "4" data-gs-y="0">
-    <div class="panel panel-warning grid-stack-item-content">
-      <div class="panel-heading">
-        <h3 class="panel-title" data-toggle="tooltip" data-placement="bottom" title="Click to drag panel"><i class="fa fa-area-chart"></i> Demo Heatmap</h3>
-      </div>
-
-
-      <div class="panel-body">
-      <p style="text-align:center;">Heatmap data </p>
+        <div class="panel-body">
+          <p style="text-align:center;">Sunburst Chart Area</p>
+        </div>
       </div>
     </div>
-  </div>
-    
-<div class="grid-stack-item ui-resizable" data-gs-height="4" data-gs-width="4" data-gs-x=
-  "8" data-gs-y="0">
-    <div class="panel panel-danger grid-stack-item-content">
-      <div class="panel-heading">
-      
-        <h3 class="panel-title" data-toggle="tooltip" data-placement="bottom" title="Click to drag panel"><i class="fa fa-bar-chart"></i> Chart Area</h3>
-      </div>
 
 
-      <div class="panel-body">
-        <p style="text-align:center;">Chart data </p>
+    <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="6" data-gs-y="0">
+      <div class="grid-stack-item-content panel panel-warning ">
+        <div class="panel-heading">
+          <h3 class="panel-title"><i class="fa fa-area-chart"></i> Demo Heatmap</h3>
+        </div>
+
+
+        <div class="panel-body">
+          <p style="text-align:center;">Heatmap data </p>
+        </div>
       </div>
     </div>
-  </div>
+
+    <!--div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="8" data-gs-y="0">
+      <div class="panel panel-danger grid-stack-item-content">
+        <div class="panel-heading">
+
+          <h3 class="panel-title"><i class="fa fa-bar-chart"></i> Chart Area</h3>
+        </div>
+
+
+        <div class="panel-body">
+          <p style="text-align:center;">Chart data </p>
+        </div>
+      </div>
+    </div-->
     <script src="js/dashboard.js"></script>
-</div> <!--end of gridstack>
+  </div>
+  <!--end of gridstack>
 
 </body>
