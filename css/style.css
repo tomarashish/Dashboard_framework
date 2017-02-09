@@ -51,6 +51,7 @@ body {
   outline: none;
 }
 
+/* card layout for creating div blocks */
 .card {
   text-align: center;
   background-color: #FFF;
@@ -120,7 +121,7 @@ hr {
 }
 
 
-/*Widget container*/
+/*Widget container type 1*/
 .widget-container {
   background: #fff;
   padding: 5px 20px 5px 20px;
@@ -135,7 +136,7 @@ hr {
 }
 
 
-/*widget container */
+/*widget container type 2 */
 .widget-box {
   background: #FFFFFF;
   border-left: 1px solid #cdcdcd;
@@ -164,7 +165,7 @@ hr {
 }
 
 
-/*widget */
+/*widget container type 3*/
 .widget-card {
   border-radius: 10px;
   box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
