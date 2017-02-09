@@ -247,6 +247,64 @@ hr {
   border-radius: 6px !important;
 }
 
+// WIDTH VARIABLES
+@width1: 220px;
+@width2: 100px;
+@full-width: 100%;
+@full-height:100%;
+
+#wrapper {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  padding-left: 0;
+  transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+  padding-left: 220px;
+  #sidebar-wrapper {
+    width: @width1;
+  }
+  #page-content-wrapper {
+    margin-right: -220px;
+    position: absolute;
+  }
+}
+
+#sidebar-wrapper {
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  background: #1a1a1a;
+  height: @full-height;
+  left: 220px;
+  margin-left: -220px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  transition: all 0.5s ease;
+  width: 0;
+  z-index: 1000;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#page-content-wrapper {
+  padding-top: 70px;
+  width: @full-width;
+}
+
+/* Sidebar nav styles */
+.sidebar-nav {
+  list-style: none;
+  margin-top: 120;
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+
 .row {
   margin-right: 10px;
   margin-left: 10px;
