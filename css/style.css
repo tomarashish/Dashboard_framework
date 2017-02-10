@@ -187,7 +187,7 @@ hr {
   background-color: #77cc6d; 
   background-color: #ff865c;
   background-color: #ffd777;*/
-  box-shadow: 0 3px 10px rgba(0, 0, 0, .13), 0 3px 10px rgba(0, 0, 0, .16);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .25), 0 1px 3px rgba(0, 0, 0, .16);
 }
 
 
@@ -247,8 +247,8 @@ hr {
   border-radius: 6px !important;
 }
 
-// WIDTH VARIABLES
-@width1: 220px;
+/* width variable*/
+@width1: 320px;
 @width2: 100px;
 @full-width: 100%;
 @full-height:100%;
@@ -261,33 +261,30 @@ hr {
   transition: all 0.5s ease;
 }
 #wrapper.toggled {
-  padding-left: 220px;
+  padding-left: 320px;
   #sidebar-wrapper {
     width: @width1;
   }
   #page-content-wrapper {
-    margin-right: -220px;
+    margin-right: -320px;
     position: absolute;
   }
 }
 
 #sidebar-wrapper {
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
   background: #ffffff;
   height: @full-height;
-  left: 220px;
-  margin-left: -220px;
+  left: 320px;
+  margin-left: -320px;
   overflow-x: hidden;
   overflow-y: auto;
   transition: all 0.5s ease;
-  width: 220;
+  width: 320;
   height: 100%;
   z-index: 1000;
-  &::-webkit-scrollbar {
-    display: none;
-  }
 }
 
 /* Sidebar nav styles */
@@ -296,6 +293,10 @@ hr {
   padding: 0;
   position: absolute;
   top: 85;
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .25), 0 1px 3px rgba(0, 0, 0, .26);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), 0 1px 3px rgba(0, 0, 0, .26);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .25), 0 1px 3px rgba(0, 0, 0, .26);
 }
 
 .sidebar-brand {
