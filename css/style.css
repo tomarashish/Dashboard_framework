@@ -25,7 +25,7 @@ body {
   background-color: #f4f3ef;
   /*background: url(../image/black.jpg) ;*/
   margin-bottom: 60px;
-  margin-top: 120px;
+  margin-top: 80px;
 }
 
 .btn-default {
@@ -260,7 +260,6 @@ hr {
   padding-left: 0;
   transition: all 0.5s ease;
 }
-
 #wrapper.toggled {
   padding-left: 220px;
   #sidebar-wrapper {
@@ -276,34 +275,39 @@ hr {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
-  background: #1a1a1a;
+  background: #ffffff;
   height: @full-height;
   left: 220px;
   margin-left: -220px;
   overflow-x: hidden;
   overflow-y: auto;
   transition: all 0.5s ease;
-  width: 0;
+  width: 220;
+  height: 100%;
   z-index: 1000;
   &::-webkit-scrollbar {
     display: none;
   }
 }
 
-#page-content-wrapper {
-  padding-top: 70px;
-  width: @full-width;
-}
-
 /* Sidebar nav styles */
 .sidebar-nav {
   list-style: none;
-  margin-top: 120;
   padding: 0;
   position: absolute;
-  top: 0;
+  top: 85;
 }
 
+.sidebar-brand {
+ padding-top: 2px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e8e8e8;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .15), 0 1px 3px rgba(0, 0, 0, .26);
+}
 
 .row {
   margin-right: 10px;
