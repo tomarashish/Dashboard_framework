@@ -6,8 +6,8 @@
   <script src="js/jquery.js"></script>
   <script src="js/underscore-min.js"></script>
   <script src="js/jquery-ui.min.js"></script>
-  
-<script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.min.js'></script>
+
+  <script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.min.js'></script>
   <!-- usingbootstrap, fontawesome and custome css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.min.css" />
@@ -49,36 +49,75 @@
         </div>
     </footer-->
 
-  <!-- gridstack panels -->
-  <div class="grid-stack">
-    <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="0" data-gs-y="0">
-      <div class="grid-stack-item-content panel panel-info ">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="fa fa-pie-chart"></i> Sunbusrt</h3>
+  <div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar-nav">
+      <div id="sidebar-wrapper">
+        <div class="sidebar-brand">
+          <span>
+            Chart Type 
+          </span>
         </div>
-
-
-        <div class="panel-body">
-          <p style="text-align:center;">Sunburst Chart Area</p>
+        <div class="grid-stack-item" data-gs-height="1" data-gs-width="1" data-gs-x="0" data-gs-y="0">
+          <div class="grid-stack-item-content panel panel-warning ">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-area-chart"></i>Heatmap</h3>
+            </div>
+            <div class="panel-body">
+              <p style="text-align:center;">Heatmap chart</p>
+            </div>
+          </div>
+        </div>
+        <div class="grid-stack-item" data-gs-height="1" data-gs-width="1" data-gs-x="2" data-gs-y="0">
+          <div class="grid-stack-item-content panel panel-warning ">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-area-chart"></i>Sunburst</h3>
+            </div>
+            <div class="panel-body">
+              <p style="text-align:center;">Sunbusrt chart </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <div id="page-content-wrapper">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
 
-    <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="6" data-gs-y="0">
-      <div class="grid-stack-item-content panel panel-warning ">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="fa fa-area-chart"></i> Demo Heatmap</h3>
+      <!-- gridstack panels -->
+      <div class="grid-stack">
+        <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="0" data-gs-y="0">
+          <div class="grid-stack-item-content panel panel-info ">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-pie-chart"></i> Sunbusrt</h3>
+            </div>
+
+
+            <div class="panel-body">
+              <p style="text-align:center;">Sunburst Chart Area</p>
+            </div>
+          </div>
         </div>
 
 
-        <div class="panel-body">
-          <p style="text-align:center;">Heatmap data </p>
+        <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="6" data-gs-y="0">
+          <div class="grid-stack-item-content panel panel-warning ">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-area-chart"></i> Demo Heatmap</h3>
+            </div>
+            <div class="panel-body">
+              <p style="text-align:center;">Heatmap data </p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
-    <!--div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="8" data-gs-y="0">
+        <!--div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="8" data-gs-y="0">
       <div class="panel panel-danger grid-stack-item-content">
         <div class="panel-heading">
 
@@ -91,8 +130,9 @@
         </div>
       </div>
     </div-->
-    <script src="js/dashboard.js"></script>
-  </div>
-  <!--end of gridstack>
+        <script src="js/dashboard.js"></script>
+      </div>
+    </div>
+    <!--end of gridstack>
 
 </body>

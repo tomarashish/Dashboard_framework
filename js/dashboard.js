@@ -25,18 +25,17 @@ $(document).ready(function () {
 });
 
 //https://tympanus.net/Development/DragDropInteractions/icons.html
-/*var options = {
+var options = {
     animate: true,
     disableResize: false,
     disableDrag: false,
-  cell_width:20,
     resizable: {
       handles: 'e, w'
     }
   };
 
 $('.grid-stack').gridstack(options);
-*/
+
 // use data-gs-id to get the change in data-gs-x and data-gs-y. Apply the change to adjacent grid to change the width in a responsive  way
 
 //set the min and max height of grid 
