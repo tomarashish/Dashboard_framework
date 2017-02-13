@@ -61,22 +61,30 @@
           </span>
         </div>
         <!-- gridstack panels -->
-        <div class="row">
-          <div class="col-md-6">
+        <div class="row" style="margin-top:20px">
+          <div class="col-md-10">
             <div class="chart-wrapper">
-              <div class="chart-area"> 
-                <img src="image/sunbusrt.png" height="100px" width="110px" />   
+              <div class="chart-area">
+                <img src="image/sunbusrt.png" height="100px" width="110px" />
+                <div class="icon-container">
+                  <i class="fa fa-plus-square-o fa-3x"></i>
+                  <i class="fa fa-check fa-4x"></i>
+                </div>
               </div>
-              
+
               <div class="chart-footer">
                 Sunburst
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-10">
             <div class="chart-wrapper">
               <div class="chart-area">
-               <img src="image/treemap.png" height="100px" width="120px" />   
+                <img src="image/treemap.png" height="100px" width="150px" />
+                <div class="icon-container">
+                  <i class="fa fa-plus-square-o fa-3x"></i>
+                  <i class="fa fa-check fa-4x"></i>
+                </div>
               </div>
 
               <div class="chart-footer">
@@ -85,11 +93,15 @@
             </div>
           </div>
         </div>
-           <div class="row">
-          <div class="col-md-6">
+        <div class="row">
+          <div class="col-md-10">
             <div class="chart-wrapper">
               <div class="chart-area">
-               <img src="image/barchart.png" height="100px" width="110px" />   
+                <img src="image/barchart.png" height="100px" width="180px" />
+                <div class="icon-container">
+                  <i class="fa fa-plus-square-o fa-3x"></i>
+                  <i class="fa fa-check fa-4x"></i>
+                </div>
               </div>
 
               <div class="chart-footer">
@@ -98,10 +110,14 @@
             </div>
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-10">
             <div class="chart-wrapper">
               <div class="chart-area">
-               <img src="image/donut.png" height="100px" width="130px" />   
+                <img src="image/donut.png" height="100px" width="130px" />
+                <div class="icon-container">
+                  <i class="fa fa-plus-square-o fa-3x"></i>
+                  <i class="fa fa-check fa-4x"></i>
+                </div>
               </div>
 
               <div class="chart-footer">
@@ -109,7 +125,7 @@
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -123,47 +139,51 @@
 
       <!-- gridstack panels -->
       <div class="grid-stack">
-        <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="0" data-gs-y="0">
+        <div class="grid-stack-item" data-gs-height="3" data-gs-width="12" data-gs-x="0" data-gs-y="0">
           <div class="grid-stack-item-content panel panel-info ">
             <div class="panel-heading">
-              <h3 class="panel-title"><i class="fa fa-pie-chart"></i> Sunbusrt</h3>
+              <h3 class="panel-title"><i class="fa fa-pie-chart"></i>Data File Uploads</h3>
             </div>
 
+            <!-- data load gridstack -->
+            <div class="grid-stack" style="margin-top:20px">
+              <div class="grid-stack-item" data-gs-x="0" data-gs-y="0" data-gs-width="1" data-gs-height="1">
+               <div class="grid-stack-item-content widget-footer">
+                  sample 1
+                </div>
+              </div>
+              <div class="grid-stack-item" data-gs-x="2" data-gs-y="0" data-gs-width="1" data-gs-height="1">
+                <div class="grid-stack-item-content widget-footer">
+                  sample 2
+                </div>
+              </div>
+              <div class="grid-stack-item" data-gs-x="4" data-gs-y="0" data-gs-width="1" data-gs-height="1">
+                <div class="grid-stack-item-content widget-footer">
+                  sample 3
+                </div>
+              </div>
+            </div>
 
-            <div class="panel-body">
-              <p style="text-align:center;">Sunburst Chart Area</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:20px">
+        <div class="col-md-3">
+          <div class="chart-wrapper" style="align-content:center">
+            <div class="chart-footer">
+              Load Data
             </div>
           </div>
         </div>
-
-
-        <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="6" data-gs-y="0">
-          <div class="grid-stack-item-content panel panel-warning ">
-            <div class="panel-heading">
-              <h3 class="panel-title"><i class="fa fa-area-chart"></i> Demo Heatmap</h3>
-            </div>
-            <div class="panel-body">
-              <p style="text-align:center;">Heatmap data </p>
-            </div>
-          </div>
-        </div>
-
-        <!--div class="grid-stack-item" data-gs-height="4" data-gs-width="4" data-gs-x="8" data-gs-y="0">
-      <div class="panel panel-danger grid-stack-item-content">
-        <div class="panel-heading">
-
-          <h3 class="panel-title"><i class="fa fa-bar-chart"></i> Chart Area</h3>
-        </div>
-
-
-        <div class="panel-body">
-          <p style="text-align:center;">Chart data </p>
-        </div>
       </div>
-    </div-->
-        <script src="js/dashboard.js"></script>
-      </div>
+
+      <script src="js/dashboard.js"></script>
+
     </div>
-    <!--end of gridstack>
+    <!--end of gridstack-->
+  </div>
+  <!-- end of page wrapper-->
+  <!-- end of wrapper-->
 
 </body>
