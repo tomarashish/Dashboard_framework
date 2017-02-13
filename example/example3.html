@@ -1,8 +1,176 @@
-<!DOCTYPE html>
 <head>
   <title> Dashborad Framework </title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
-  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
   <!-- Using local jquery_gridster, bootstrap and fontawesome libs-->
-  <script
+  <script src="js/jquery.js"></script>
+  <script src="js/underscore-min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+
+  <script type="text/javascript" src='//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.min.js'></script>
+  <!-- usingbootstrap, fontawesome and custome css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/gridstack.js/0.2.6/gridstack.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+
 </head>
+
+<body>
+  <!-- header-->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Visualization Dashboard</a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+          <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> Help</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!--footer class="footer">
+        <div class="container">
+            <p>Under development</p>
+            <a href="" target="_blank"><i class="icon-github icon-large"></i>&nbsp;&nbsp;Github</a>
+        </div>
+    </footer-->
+
+  <div id="wrapper">
+    <div class="overlay"></div>
+
+    <!-- Sidebar -->
+    <div class="sidebar-nav">
+      <div id="sidebar-wrapper">
+        <div class="sidebar-brand">
+          <span>
+            Chart Type 
+          </span>
+        </div>
+        <!-- gridstack panels -->
+        <div class="row">
+          <div class="col-md-10">
+            <div class="chart-wrapper">
+              <div class="chart-area">
+                <img src="image/sunbusrt.png" height="100px" width="110px" />
+                <div class="icon-container">
+                  <i class="fa fa-plus-square-o fa-3x"></i>
+                  <i class="fa fa-check fa-4x"></i>
+                </div>
+              </div>
+
+              <div class="chart-footer">
+                Sunburst
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10">
+            <div class="chart-wrapper">
+              <div class="chart-area">
+                <img src="image/treemap.png" height="100px" width="150px" />
+                <div class="icon-container">
+                  <i class="fa fa-plus-square-o fa-3x"></i>
+                  <i class="fa fa-check fa-4x"></i>
+                </div>
+              </div>
+
+              <div class="chart-footer">
+                Treemap
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <div class="chart-wrapper">
+              <div class="chart-area">
+                <img src="image/barchart.png" height="100px" width="180px" />
+                <div class="icon-container">
+                  <i class="fa fa-plus-square-o fa-3x"></i>
+                  <i class="fa fa-check fa-4x"></i>
+                </div>
+              </div>
+
+              <div class="chart-footer">
+                bar chart
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-10">
+            <div class="chart-wrapper">
+              <div class="chart-area">
+                <img src="image/donut.png" height="100px" width="130px" />
+                <div class="icon-container">
+                  <i class="fa fa-plus-square-o fa-3x"></i>
+                  <i class="fa fa-check fa-4x"></i>
+                </div>
+              </div>
+
+              <div class="chart-footer">
+                Donut
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="page-content-wrapper">
+      <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+        <span class="hamb-top"></span>
+        <span class="hamb-middle"></span>
+        <span class="hamb-bottom"></span>
+      </button>
+
+      <!-- gridstack panels -->
+      <div class="grid-stack">
+        <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="0" data-gs-y="0">
+          <div class="grid-stack-item-content panel panel-info ">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-pie-chart"></i> Sunbusrt</h3>
+            </div>
+
+
+            <div class="panel-body">
+              <p style="text-align:center;">Sunburst Chart Area</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="grid-stack-item" data-gs-height="6" data-gs-width="6" data-gs-x="6" data-gs-y="0">
+          <div class="grid-stack-item-content panel panel-warning ">
+            <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-area-chart"></i> Demo Heatmap</h3>
+            </div>
+            <div class="panel-body">
+              <p style="text-align:center;">Heatmap data </p>
+            </div>
+          </div>
+        </div>
+
+        <script src="js/dashboard.js"></script>
+
+      </div>
+      <!--end of gridstack-->
+    </div>
+    <!-- end of page wrapper-->
+  </div>
+  <!-- end of wrapper-->
+
+</body>
