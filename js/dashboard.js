@@ -1,5 +1,19 @@
 //https://tympanus.net/Development/DragDropInteractions/icons.html
 
+// variable to define custom grdistack behavior 
+var options = {
+  animate: true,
+  disableResize: false,
+  disableDrag: false,
+  resizable: {
+    handles: 'e, w'
+  }
+};
+
+// using options variable to change gridstack behavior
+$('.grid-stack').gridstack(options);
+
+
 // use data-gs-id to get the change in data-gs-x and data-gs-y. Apply the change to adjacent grid to change the width in a responsive  way
 
 //set the min and max height of grid 
@@ -8,6 +22,8 @@
 //variable for grid
 var x = 0,
   y = 0;
+var gridStack;
+var i = 1;
 
 $(document).ready(function () {
 
@@ -23,16 +39,15 @@ $(document).ready(function () {
 
 function createGridStack(chartName) {
 
-  var i = 1;
-   var gridStack;
+  
                   
   //creating dynamic div element
-  //if("x" == 0){
+  if( x == 0 ){
       gridStack = document.createElement('div');
       gridStack.className = 'grid-stack';
       gridStack.id = "chartContainer"
-  //}
-                  
+  }
+              
   var gridItem = document.createElement('div'),
     itemContent = document.createElement('div'),
     panelHeading = document.createElement('div'),
@@ -46,14 +61,15 @@ function createGridStack(chartName) {
 
   gridItem.id = "chartName" + i;      
   i = i + 1;   
-    
+ 
+  
   gridItem.setAttribute("data-gs-height","6");
   gridItem.setAttribute("data-gs-width","6");
-  gridItem.setAttribute("data-gs-x","0");
-  gridItem.setAttribute("data-gs-y","0");
+  gridItem.setAttribute("data-gs-x", x);
+  gridItem.setAttribute("data-gs-y", y);
   
-  panelHeading.innerHTML += '<h3 class="panel-title"><i class="fa fa-pie-chart"></i> "'+chartName+'"</h3>'
-  panelBody.innerHTML += '<p style="text-align:center;"> "'+chartName+'"</p>'
+  panelHeading.innerHTML += '<h3 class="panel-title"><i class="fa fa-pie-chart"></i> '+chartName+'</h3>'
+  panelBody.innerHTML += '<p style="text-align:center;"> add data to '+chartName+'</p>'
   
   itemContent.appendChild(panelHeading);
   itemContent.appendChild(panelBody);
@@ -64,22 +80,20 @@ function createGridStack(chartName) {
   var pageWrapper = document.getElementById('page-content-wrapper');
       pageWrapper.appendChild(gridStack);
   
+   x = x + 6;  
+   
+  if(x == 12){
+    x = 0;
+    y = 0;
+  }
+  
+  // using options variable to change gridstack behavior
+  $('.grid-stack').gridstack(options);
+
 }
 
 
 
-// variable to define custom grdistack behavior 
-var options = {
-  animate: true,
-  disableResize: false,
-  disableDrag: false,
-  resizable: {
-    handles: 'e, w'
-  }
-};
-
-// using options variable to change gridstack behavior
-$('.grid-stack').gridstack(options);
 
 
 
