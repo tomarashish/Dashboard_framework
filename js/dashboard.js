@@ -39,61 +39,56 @@ $(document).ready(function () {
 
 function createGridStack(chartName) {
 
-  
-                  
   //creating dynamic div element
-  if( x == 0 ){
-      gridStack = document.createElement('div');
-      gridStack.className = 'grid-stack';
-      gridStack.id = "chartContainer"
+  if (x == 0) {
+    gridStack = document.createElement('div');
+    gridStack.className = 'grid-stack';
+    gridStack.id = "chartContainer"
   }
-              
+
   var gridItem = document.createElement('div'),
     itemContent = document.createElement('div'),
     panelHeading = document.createElement('div'),
     panelBody = document.createElement('div');
 
-  
+
   gridItem.className = 'grid-stack-item';
   itemContent.className = 'grid-stack-item-content panel panel-info';
   panelHeading.className = 'panel-heading';
   panelBody.className = 'panel-body';
 
-  gridItem.id = "chartName" + i;      
-  i = i + 1;   
- 
-  
-  gridItem.setAttribute("data-gs-height","6");
-  gridItem.setAttribute("data-gs-width","6");
+  gridItem.id = "chartName" + i;
+  i = i + 1;
+
+
+  gridItem.setAttribute("data-gs-height", "6");
+  gridItem.setAttribute("data-gs-width", "6");
   gridItem.setAttribute("data-gs-x", x);
   gridItem.setAttribute("data-gs-y", y);
-  
-  panelHeading.innerHTML += '<h3 class="panel-title"><i class="fa fa-pie-chart"></i> '+chartName+'</h3>'
-  panelBody.innerHTML += '<p style="text-align:center;"> add data to '+chartName+'</p>'
-  
+
+  panelHeading.innerHTML += '<h3 class="panel-title"><i class="fa fa-pie-chart"></i> ' + chartName + '</h3>'
+  panelBody.innerHTML += '<p style="text-align:center;"> add data to ' + chartName + '</p>'
+
   itemContent.appendChild(panelHeading);
   itemContent.appendChild(panelBody);
-  
+
   gridItem.appendChild(itemContent);
   gridStack.appendChild(gridItem);
-  
+
   var pageWrapper = document.getElementById('page-content-wrapper');
-      pageWrapper.appendChild(gridStack);
-  
-   x = x + 6;  
-   
-  if(x == 12){
+  pageWrapper.appendChild(gridStack);
+
+  x = x + 6;
+
+  if (x == 12) {
     x = 0;
     y = 0;
   }
-  
+
   // using options variable to change gridstack behavior
   $('.grid-stack').gridstack(options);
 
 }
-
-
-
 
 
 
